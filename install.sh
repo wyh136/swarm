@@ -6,5 +6,7 @@ wget https://github.com/ethersphere/bee-clef/releases/download/v0.4.10/bee-clef_
 sudo dpkg -i bee-clef_0.4.10_amd64.deb
 sudo dpkg -i bee_0.5.3_amd64.deb
 sudo bee-get-addr > addr.txt
+wget https://raw.githubusercontent.com/wyh136/swarm/main/bee.yaml -O /etc/bee/bee.yaml
+sudo systemctl restart bee
 chown -R bee:bee /var/lib/bee
 sudo journalctl -u bee -f
