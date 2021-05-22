@@ -7,6 +7,7 @@
 ## cause the node to always accept incoming connections
 # bootnode-mode: false
 ## enable clef signer
+full-node: true
 clef-signer-enable: true
 ## clef signer endpoint
 clef-signer-endpoint: /var/lib/bee-clef/clef.ipc
@@ -19,7 +20,7 @@ data-dir: /var/lib/bee
 ## db capacity in chunks, multiply by 4096 to get approximate capacity in bytes
 # db-capacity: 5000000
 ## number of open files allowed by database
-# db-open-files-limit: 200
+db-open-files-limit: 1024
 ## size of block cache of the database in bytes
 # db-block-cache-capacity: 33554432
 ## size of the database write buffer in bytes
