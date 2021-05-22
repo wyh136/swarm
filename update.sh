@@ -1,4 +1,5 @@
 #!/bin/sh
+rm update.sh
 sudo apt update -y 
 sudo apt upgrade -y
 sudo systemctl stop bee
